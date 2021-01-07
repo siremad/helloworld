@@ -10,3 +10,4 @@ public class test{
 	session.save(info);
   }
 }
+//Test
