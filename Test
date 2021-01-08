@@ -6,7 +6,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-       book b = new book();
+       member b = new member();
         b.setTitle("Java_programing");
         b.setAuthor("mohammad ali");
 
