@@ -1,1 +1,22 @@
-//Test
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+       book b = new book();
+        b.setTitle("Java_programing");
+        b.setAuthor("mohammad ali");
+
+        SessionFactory sessionFactory = new 
+        Configuration().configure().buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        
+        session.save(b);
+        session.getTransaction().commit();
+        session.close();
+	}
+}
